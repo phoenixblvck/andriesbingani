@@ -1,3 +1,81 @@
+.parallax {
+    /* The image used */
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url("../../assets/banner.jpg");
+  
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 .projects { 
-    background-color: #1d242a; 
+    background-color: #505393; 
+    padding: 10% 15% 10% 15%;
 }
+
+.parallax > .intro {
+    margin: auto;
+    text-align: center;
+    height: 120vh;
+    width: 50%;
+    padding-top: 40vh;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+        opacity: 0;
+	}
+	100% {
+        opacity: 1;
+	}
+}
+
+#mainHR {
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 3px solid #ffffff;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.skills {
+    background-color: #21b2a6;
+    padding: 10% 15% 10% 15%;
+
+}
+
+.rightPic {
+    background-color: #505393;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.leftPic {
+    background-color: #2e3842;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.highSchoolLife > h1 {
+    font-size: 200%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.highSchoolLife > p {
+    font-size: 100%;
+}
+
+ol { color: #f8f8f8; font-family: 'Ubuntu',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px; }

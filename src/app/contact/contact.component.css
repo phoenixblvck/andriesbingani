@@ -1,3 +1,72 @@
 .contact { 
     background-color: #1d242a; 
 }
+
+.parallax {
+    /* The image used */
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1) ), url("../../assets/banner.jpg");
+  
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.parallax > .intro {
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+    width: 50%;
+    padding-top: 25vh;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+        opacity: 0;
+	}
+	100% {
+        opacity: 1;
+	}
+}
+
+#mainHR {
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 3px solid #ffffff;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, input:focus, textarea, textarea:focus {
+    background: rgba(144, 144, 144, 0.25);
+    font-size: 15pt;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    line-height: 1.65em;
+    color: #495057;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: grey;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: grey;
+  }
+  
+  ::placeholder {
+    color: grey;
+  }
