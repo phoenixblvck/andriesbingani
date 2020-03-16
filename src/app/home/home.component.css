@@ -64,8 +64,11 @@
     font-size: 100%;
 }
 
-.leftPic, .rightPic {
+.leftPic {
     background-color: #2e3842;
+}
+.rightPic {
+    background-color: #505393;
 }
 
 .highSchoolLife {
